@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "net.kyrptonaught.quickshulker.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ContainerMixin",
+    "CraftingScreenHandlerMixin",
+    "ItemMixin"
+  ],
+  "client": [
+    "ScreenMixin",
+    "CreativeSlotMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
