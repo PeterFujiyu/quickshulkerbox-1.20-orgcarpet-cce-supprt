@@ -43,6 +43,7 @@ public class QuickShulkerData {
         // Check if the insertStack is a shulker box with the forbidden names
         if (hostStack.getName().getString().equals("更新抑制器") || hostStack.getName().getString().equalsIgnoreCase("updateSuppression")) {
             // If it is, prevent insertion
+            // Send a message to player
             player.sendMessage(Text.literal("你不能向更新抑制器潜影盒里添加物品！因为这会崩服！"), false);
             return false;
         }
